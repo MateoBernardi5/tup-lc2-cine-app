@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUP LC2 - TP Integrador - Cine</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <!--Titulo Cabecera-->
+        <span>Cartelera de Cine</span>
+      </h1>
+      <nav>
+        <!--Menu Superior--> 
+        <ul>
+          <li class="current-page"><a href="#">Cartelera</a></li>
+          <li><a href="favorities.html">Mis Favoritas</a></li>
+          <li><a href="help.html">Ayuda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+      <h2>Últimas Películas en Cartelera</h2>
+      <section id="form-movie-new">
+        <!--Seccion para agregar una pelicula favorita por codigo-->
+        <form action="">
+          <input type="number">
+          <button>Agregar</button>
+        </form>
+      </section>
+      <section id="sec-messages">
+        <!--Seccion para mensajes-->
+        <p>Película agregada con éxito <br>
+        Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar <br>
+        La Película ingresada ya se encuentra almacenada</p> <br>
+        <!--ESTOS MENSAJES (<p>) NO ENTENDÍ COMO DEBERIAN APARECER -->
+      </section>
+      <section id="sec_peliculas">
+        <!--Seccion visualizacion de peliculas-->
+        <div class="contenedorPeliculas" id="contenedorPeliculas">
+          <img src="img/pelicula.jpg" alt="Creed3">
+          <h3>Creed III</h3>
+          <p> 
+            <b>Código:</b> 677179 <br>
+            <b>Título original:</b> Creed III <br>
+            <b>Idioma original:</b> en <br>
+            <b>Año:</b> 2023-03-01 <br>
+            <a href="favorities.html">Agregar a Favoritos</a> 
+          </p>
+        </div>
+      </section>
+      <section id="sec_paginador_peliculas">
+        <!--Seccion de Paginacion-->
+        <div class="paginacion" id="paginacion">
+          <button id="btnAnterior">Anterior</button>
+          <button id="btnSiguiente">Siguiente</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Desarrollado con ♥ - LC2</p>
+    </footer>
+  </body>
+</html>
