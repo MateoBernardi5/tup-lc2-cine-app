@@ -1,0 +1,39 @@
+label {
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 25px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:#065143;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+  }
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+#form-cine_contacto form button {
+    margin: 20px 20px;
+  }

@@ -7,12 +7,14 @@
   <title>TUP LC2 - TP Integrador</title>
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/pages/help.css">
 </head>
 
 <body>
   <header>
     <h1>
       <!--Titulo Cabecera-->
+      <img src="img/IconoCine.png" alt="iconoCine">
       <span>Cartelera de Cine</span>
     </h1>
     <nav>
@@ -40,7 +42,7 @@
     </section>
     <section id="form-cine_contacto">
       <!-- Sección donde se debe colocar el formulario de contacto-->
-      <form action="">
+      <form action="help">
 
           <label for="nombre">Nombre:</label> <br>
           <input type="text" id="nombre"> <br> 
@@ -49,10 +51,11 @@
           <input type="email" id="email"> <br>
           
           <label for="mensaje">Mensaje: </label> <br>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea> <br>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea> <br> 
 
           <button type="submit">Limpiar</button> 
-          <button type="submit">Enviar</button>
+          <button type="submit">Enviar</button> 
+
       </form>
     </section>
     <section id="sec-cine-result"></section>

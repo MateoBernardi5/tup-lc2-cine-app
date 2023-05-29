@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+  font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
 }
 
 :root {
@@ -40,6 +42,7 @@ header {
   top: 0;
   width: 100%;
   background-image: url('../img/FondoCine6.webp');
+  background-repeat: no-repeat;
   border-radius: 0 0% 20px 20px;
   border-bottom: 2px solid var(--color-active);
 }
@@ -63,6 +66,8 @@ nav li a {
   font-weight: bold;
   color: var(--color-texto-blanco);
   background-color: var(--color-back-inactive);
+  border-radius: 10px 10px 0 0;
+  margin-right: 2px;
 }
 
 nav li.current-page a {
@@ -78,6 +83,8 @@ main {
   padding-bottom: 60px;
   height: calc(100% - 120px);
   width: 100%;
+  background-color: #e0e0e0;
+  color: #1d1d1d;
 }
 
 h1 {
@@ -96,6 +103,7 @@ h2 {
   color: var(--color-titulos);
   margin: 16px 0;
   text-align: center;
+  text-shadow: 2px 2px 10px #888;
 }
 
 h3 {

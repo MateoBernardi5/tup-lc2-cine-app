@@ -1,0 +1,30 @@
+  .paginacion {
+    position: ;
+    bottom: ;
+    width: ;
+    display: ;
+    justify-content: ;
+    gap: ;
+    padding: ;
+  }
+  
+  .paginacion button {
+    cursor: ;
+    border: ;
+    display: ;
+    align-items: ;
+    justify-content: ;
+    text-align: ;
+    height: ;
+    width: ;
+    background-color: #;
+    color: #;
+    border-radius: ;
+    font-family: ;
+    font-weight: ;
+    transition: .3s ease all;
+  }
+  
+  .paginacion button:hover {
+    background-color: var(--color-back-active);
+  }
