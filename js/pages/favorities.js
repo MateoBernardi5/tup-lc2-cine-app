@@ -68,6 +68,8 @@ function cargaPeliculas() {
   if (peliculasFavoritas.length > 0) {
     peliculasFavoritas.map(function (codigoPelicula) {
       buscarPelicula(codigoPelicula);
+      const mensajeAdvertencia = document.getElementById("mensajeAdvertencia"); 
+      mensajeAdvertencia.style.display = "none";
     });
   } else { 
     const mensajeAdvertencia = document.getElementById("mensajeAdvertencia");
