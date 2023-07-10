@@ -63,31 +63,6 @@
     box-shadow: 0px 0px 0px;
   }
 
-  #Success{
-    background-color: #28a745;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  #Error{
-    background-color: #dc3545;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-  
-  #Warning{
-    background-color: #ffc107;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 10px auto;
-  }
-
   .paginacion {
     position: relative;
     bottom: 10px;

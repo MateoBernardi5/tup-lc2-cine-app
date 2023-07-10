@@ -1,13 +1,9 @@
-let pagina = 1
-const secPeliculas = document.getElementById("sec_peliculas")
-const botonAnterior = document.getElementById("btnAnterior")
-const botonSiguiente = document.getElementById("btnSiguiente")
-const codigo = document.getElementById("codigo")
+let pagina = 1;
+const secPeliculas = document.getElementById("sec_peliculas");
+const botonAnterior = document.getElementById("btnAnterior");
+const botonSiguiente = document.getElementById("btnSiguiente");
+const codigo = document.getElementById("codigo");
 
-
-const mensajeError = document.getElementById('Error')
-const mensajeExito = document.getElementById('Success')
-const mensajeWarning = document.getElementById('Warning')
 
 
 
@@ -114,8 +110,11 @@ function agregarPeliculaFavorita(codigo) {
   if (!peliculasFavoritas.includes(parseInt(codigo))) {
     buscarPelicula(codigo, peliculasFavoritas);
   } else {
+    const mensajeExito = document.getElementById("mensajeExito");
     mensajeExito.style.display = "none";
+    const mensajeAdvertencia = document.getElementById("mensajeAdvertencia");
     mensajeAdvertencia.style.display = "block";
+    const mensajeError = document.getElementById("mensajeError");
     mensajeError.style.display = "none";
   }
 }
@@ -126,46 +125,5 @@ function agregarPorCodigo(event) {
   agregarPeliculaFavorita(codigo);
 }
 
-
-
-
-function mostrarMensajeError(mensaje) {
-    mensajeError.innerText = mensaje;
-    mensajeError.style.display = 'block';
-    mensajeExito.style.display = 'none';
-    mensajeWarning.style.display = 'none';
-  
-    setTimeout(() => {
-      mensajeError.style.display = 'none';
-    }, 5000);
-  }
-  
-function mostrarMensajeExito(mensaje) {
-    mensajeExito.innerText = mensaje;
-    mensajeExito.style.display = 'block';
-    mensajeError.style.display = 'none';
-    mensajeWarning.style.display = 'none';
-  
-    setTimeout(() => {
-      mensajeExito.style.display = 'none';
-    }, 5000);
-  }
-  
-function mostrarMensajeWarning(mensaje) {
-    mensajeWarning.innerText = mensaje;
-    mensajeWarning.style.display = 'block';
-    mensajeError.style.display = 'none';
-    mensajeExito.style.display = 'none';
-  
-    setTimeout(() => {
-      mensajeWarning.style.display = 'none';
-    }, 5000);
-  }
-  
-  mensajeError.style.display = 'none';
-  mensajeExito.style.display = 'none';
-  mensajeWarning.style.display = 'none';
-  
-
-
 cargarPeliculas()
+agregarPeliculaFavorita(codigo)

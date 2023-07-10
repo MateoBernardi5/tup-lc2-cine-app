@@ -69,9 +69,9 @@ function cargaPeliculas() {
     peliculasFavoritas.map(function (codigoPelicula) {
       buscarPelicula(codigoPelicula);
     });
-  } else {
-    mostrarMensajeWarning(mensaje)
-    mensajeWarning.style.display = "block";
+  } else { 
+    const mensajeAdvertencia = document.getElementById("mensajeAdvertencia");
+    mensajeAdvertencia.style.display = "block";
   }
 }
 
