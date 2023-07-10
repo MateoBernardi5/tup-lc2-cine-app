@@ -1,36 +1,64 @@
-.contenedorPeliculasFavoritas {
+
+#sec-favorities-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    grid-gap: 20px;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    justify-items: center;
 }
 
-.pelicula {
-    padding: 40px;
+.contenedorPeliculasFavoritas  {
+    padding: 15px;
     margin-bottom: 5px;
 }
 
-.pelicula img {
-    width: 250px;
-    height: 350px;
-    display: block;
-    margin: 0 auto;
+.contenedorPosterFav img {
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
 }
 
-.pelicula p {
+.contenedorPeliculasFavoritas p {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 12px;
     color: var(--color-active);
 }
 
-.pelicula h3 {
+.contenedorPeliculasFavoritas h3 {
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #FFCE30;
 }
+
+/*agregado*/
+
+.button {
+    background: #7f8c8d;
+    color: white;
+    display: block;
+    font-size: 15px;
+    margin: 15px auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #373c3c;
+  }
+  .button span {
+    margin-right: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 500;
+  }
+  .button.medium {
+    width: 150px;
+  }
+  .button.radius {
+    border-radius: 50px;
+  }
+  .button:hover {
+    box-shadow: 0px 0px 0px;
+  }

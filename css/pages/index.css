@@ -1,30 +1,30 @@
-  .contenedorPeliculas {
+  #sec_peliculas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    justify-items: center;
   }
 
-  .pelicula {
+  .contenedorPeliculas {
     padding: 15px;
     margin-bottom: 5px;
   }
 
-  .pelicula img {
-    width: 250px;
-    height: 350px;
+  .contenedorPeliculas img {
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-
-  .pelicula p {
+  .contenedorPeliculas p {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 12px;
     color: #288BA8
   }
 
-  .pelicula h3 {
+  .contenedorPeliculas h3 {
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -32,7 +32,7 @@
     color: #FFCE30;
   }
 
-  .pelicula .botonFavoritos {
+  .contenedorPeliculas .Fav-Button {
     background: #7f8c8d;
     color: #FFFFFF;
     display: inline-block;
@@ -47,20 +47,45 @@
     border-radius: 15px;
   }
 
-  .pelicula .botonFavoritos span {
+  .contenedorPeliculas .Fav-Button span {
     margin-right: 10px;
   }
 
-  .pelicula .botonFavoritos.medium {
+  .contenedorPeliculas .Fav-Button.medium {
     width: 150px;
   }
 
-  .pelicula .botonFavoritos.radius {
+  .contenedorPeliculas .Fav-Button.radius {
     border-radius: 50px;
   }
 
-  .pelicula .botonFavoritos:hover {
+  .contenedorPeliculas .Fav-Button:hover {
     box-shadow: 0px 0px 0px;
+  }
+
+  #Success{
+    background-color: #28a745;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #Error{
+    background-color: #dc3545;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  #Warning{
+    background-color: #ffc107;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 10px auto;
   }
 
   .paginacion {

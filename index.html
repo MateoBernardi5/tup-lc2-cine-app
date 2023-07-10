@@ -7,6 +7,9 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/pages/index.css">
+    <link rel="icon" href="/Integrador/TUP-LC2-CINE-APP_Template/img/cinema_popcorn.ico" type=image/x-icon>
+    <script src="./js/common.js" defer></script>
+    <script src="./js/pages/index.js" defer></script>
   </head>
 
   <body>
@@ -30,82 +33,25 @@
       <h2>Últimas Películas en Cartelera</h2>
       <section id="form-movie-new">
         <!--Seccion para agregar una pelicula favorita por codigo-->
-        <form action="">
+        <form id="formulario">
           <p>Agregar Pelicula Favorita por Código:</p>
-          <input type="number">
-          <button>Agregar</button>
+          <input type="number" id="codigo">
+          <button id="Fav-Button" onclick="agregarPorCodigo(event)">Agregar</button>
+          <br><br>
         </form>
       </section>
       <section id="sec-messages">
         <!--Seccion para mensajes-->
-        <!--<p>Película agregada con éxito <br>
-        Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar <br>
-        La Película ingresada ya se encuentra almacenada</p> <br>-->
-        <!--ESTOS MENSAJES (<p>) NO ENTENDÍ COMO DEBERIAN APARECER -->
+
+          <p id="Success">Película agregada con éxito.</p>
+          <p id="Warning">La Película ingresada ya se encuentra almacenada.</p>
+          <p id="Error">Error: La Película seleccionada no se encuentra en la API o se produjo un error al consultar.</p>
+
       </section>
       <section id="sec_peliculas">
         <!--Seccion visualizacion de peliculas-->
         <div class="contenedorPeliculas" id="contenedorPeliculas">
 
-          <div class="pelicula" id="pelicula">
-            <img src="img/MarioBros.webp" alt="MarioBros">
-            <h3>Super Mario Bros. La película</h3>
-            <p> 
-              <b>Código:</b> 502356 <br>
-              <b>Título original:</b> The Super Mario Bros. Movie <br>
-              <b>Idioma original:</b> en <br>
-              <b>Año:</b> 2023-04-05 <br>
-              <a href="favorities.html" class="botonFavoritos">Agregar a Favoritos</a> 
-            </p>
-          </div>   
-
-          <div class="pelicula" id="pelicula">
-            <img src="img/shazam.jpeg" alt="shazam">
-            <h3>¡Shazam! La furia de los dioses</h3>
-            <p> 
-              <b>Código:</b> 594767 <br>
-              <b>Título original:</b> Shazam! Fury of the Gods <br>
-              <b>Idioma original:</b> en <br>
-              <b>Año:</b> 2023-03-15 <br>
-              <a href="favorities.html" class="botonFavoritos">Agregar a Favoritos</a> 
-            </p>
-          </div>   
-
-          <div class="pelicula" id="pelicula">
-            <img src="img/niñaComunion.jpg" alt="niñaComunion">
-            <h3>La niña de la comunión</h3>
-            <p> 
-              <b>Código:</b> 1008005 <br>
-              <b>Título original:</b> La niña de la comunión <br>
-              <b>Idioma original:</b> es <br>
-              <b>Año:</b> 2023-02-10 <br>
-              <a href="favorities.html" class="botonFavoritos">Agregar a Favoritos</a> 
-            </p>
-          </div>   
-
-          <div class="pelicula" id="pelicula">
-            <img src="img/gatoConBotas.jpg" alt="GatoConBotas">
-            <h3>Gato con Botas: El último deseo</h3>
-            <p> 
-              <b>Código:</b> 315162 <br>
-              <b>Título original:</b> Puss in Boots: The Last Wish <br>
-              <b>Idioma original:</b> en <br>
-              <b>Año:</b> 2022-12-07 <br>
-              <a href="favorities.html" class="botonFavoritos">Agregar a Favoritos</a> 
-            </p>
-          </div>
-          
-          <div class="pelicula" id="pelicula">
-          <img src="img/creed.jpg" alt="Creed3">
-          <h3>Creed III</h3>
-          <p> 
-            <b>Código:</b> 677179 <br>
-            <b>Título original:</b> Creed III <br>
-            <b>Idioma original:</b> en <br>
-            <b>Año:</b> 2023-03-01 <br>
-            <a href="favorities.html" class="botonFavoritos">Agregar a Favoritos</a> 
-          </p>
-          </div>
         </div>
       </section>
       <section id="sec_paginador_peliculas">
